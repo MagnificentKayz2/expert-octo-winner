@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elsivia & Marvellous Wedding</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* --- CSS STYLES --- */
+        :root {
+            /* Brown Theme Palette */
+            --dark-brown: #3E2723;
+            --medium-brown: #795548;
+            --light-brown: #D7CCC8;
+            --beige: #F5F5DC;
+            --gold: #C5A059;
+            --white: #ffffff;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Lato', sans-serif;
+            background-color: var(--beige);
+            color: var(--dark-brown);
+            line-height: 1.6;
+            text-align: center;
+        }
+
+        /* Hero Section */
+        header {
+            /* Background image of brown flowers/decor */
+            background-image: linear-gradient(rgba(62, 39, 35, 0.7), rgba(62, 39, 35, 0.5)), url('https://images.unsplash.com/photo-1515934751635-c81c6bc9a2d8?q=80&w=1920&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: var(--white);
+            padding: 20px;
+        }
+
+        h1 {
+            font-family: 'Great Vibes', cursive;
+            font-size: 4rem;
+            margin: 0;
+            color: var(--gold);
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        h2 {
+            font-family: 'Lato', sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            font-size: 1.2rem;
+            margin-top: 10px;
+        }
+
+        .date-display {
+            border-top: 2px solid var(--gold);
+            border-bottom: 2px solid var(--gold);
+            padding: 10px 30px;
+            margin-top: 20px;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        /* Content Sections */
+        section {
+            padding: 60px 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            font-family: 'Great Vibes', cursive;
+            font-size: 3rem;
+            color: var(--medium-brown);
+            margin-bottom: 30px;
+        }
+
+        /* Details Card */
+        .details-card {
+            background: var(--white);
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(62, 39, 35, 0.1);
+            border: 1px solid var(--light-brown);
+        }
+
+        .detail-item {
+            margin-bottom: 20px;
+        }
+
+        .detail-item strong {
+            display: block;
+            color: var(--gold);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 0.9rem;
+        }
+
+        /* Image Decoration */
+        .decoration-img {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 8px;
+            margin: 20px 0;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+
+        /* RSVP Buttons */
+        .rsvp-container {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            align-items: center;
+            margin-top: 30px;
+        }
+
+        .whatsapp-btn {
+            background-color: #25D366; /* WhatsApp Green */
+            color: white;
+            text-decoration: none;
+            padding: 15px 30px;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 1rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            width: 100%;
+            max-width: 300px;
+            justify-content: center;
+        }
+
+        .whatsapp-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(37, 211, 102, 0.3);
+            background-color: #20bd5a;
+        }
+
+        footer {
+            background-color: var(--dark-brown);
+            color: var(--light-brown);
+            padding: 20px;
+            font-size: 0.9rem;
+        }
+
+        /* Mobile Adjustments */
+        @media (max-width: 600px) {
+            h1 { font-size: 3rem; }
+            .section-title { font-size: 2.5rem; }
+            .details-card { padding: 20px; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h2>The Wedding Of</h2>
+        <h1>Elsivia & Marvellous</h1>
+        <div class="date-display">22 • 12 • 2025</div>
+        <p style="margin-top:20px;">We invite you to celebrate our love.</p>
+    </header>
+
+    <section id="details">
+        <h2 class="section-title">The Details</h2>
+        
+        <img src="https://images.unsplash.com/photo-1519225421980-715cb0202128?q=80&w=800&auto=format&fit=crop" alt="Brown themed wedding decoration" class="decoration-img">
+
+        <div class="details-card">
+            <div class="detail-item">
+                <strong>When</strong>
+                <p>Monday, 22 December 2025</p>
+                <p>Time: 10:00 AM (Tentative)</p>
+            </div>
+
+            <div class="detail-item">
+                <strong>Where</strong>
+                <p>Mberi Primary School Hall</p>
+                <p>Zengeza 2, Chitungwiza, Zimbabwe</p>
+            </div>
+            
+            <div class="detail-item">
+                <strong>Dress Code</strong>
+                <p>Strictly Formal • Shades of Brown & Gold</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="rsvp" style="background-color: var(--white);">
+        <h2 class="section-title">RSVP</h2>
+        <p>Kindly confirm your attendance via WhatsApp by contacting one of the numbers below.</p>
+        
+        <div class="rsvp-container">
+            <a href="https://wa.me/263772837016?text=Hello,%20I%20would%20like%20to%20RSVP%20for%20Elsivia%20and%20Marvellous's%20wedding." class="whatsapp-btn">
+                <span>Message +263 77 283 7016</span>
+            </a>
+
+            <a href="https://wa.me/263775338069?text=Hello,%20I%20would%20like%20to%20RSVP%20for%20Elsivia%20and%20Marvellous's%20wedding." class="whatsapp-btn">
+                <span>Message +263 77 533 8069</span>
+            </a>
+
+            <a href="https://wa.me/263773225825?text=Hello,%20I%20would%20like%20to%20RSVP%20for%20Elsivia%20and%20Marvellous's%20wedding." class="whatsapp-btn">
+                <span>Message +263 77 322 5825</span>
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <p>With Love, Elsivia & Marvellous</p>
+        <p>&copy; 2025 Wedding Celebration</p>
+    </footer>
+
+</body>
+</html>
